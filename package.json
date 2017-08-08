@@ -1,0 +1,36 @@
+{
+  "name": "require-otf",
+  "version": "0.1.0",
+  "description": "Require on-the-fly: A module adds ability to hot-reloading and lazy-loading on other modules",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib --source-maps",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JLChnToZ/rotf.git"
+  },
+  "keywords": [
+    "hot-reload",
+    "lazy-initialize"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "author": "Jeremy Lam \"JLChnToZ\"",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JLChnToZ/rotf/issues"
+  },
+  "homepage": "https://github.com/JLChnToZ/rotf#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.6.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
